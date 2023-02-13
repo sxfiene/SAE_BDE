@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+
+	background-color: #172026;
+
+}
+
+.image {
+	display: block;
+	text-align: center;
+
+
+}
+
+
+.phrase1 {
+	color: #ffff;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 45px;
+	font-family: 'Rancho';
+
+
+}
+
+.phrase2 {
+	color: #ffff;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-size: 45px;
+	font-family: 'Rancho';
+
+
+}

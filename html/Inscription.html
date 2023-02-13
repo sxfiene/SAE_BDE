@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>InscriptionFr</title>
+    <link rel="stylesheet" href="../css/Inscription.css">
+    <link href="https://fonts.cdnfonts.com/css/rancho" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="head"><img src="../img/LoupNoir.png" alt="Logo BDE" class="loupBde"></div>
+    </header>
+    <!--FORMULAIRE-->
+    <div class="formulaire">
+      <div class="container">
+        <form method="post" action="../php/controller.php" id="form">
+          <p>BDE Inscription </p>
+          <input type='text' name='Nom' placeholder="Entrez votre nom" id="inpNom" />
+          <br>
+          <input type='text' name='Prenom' placeholder="Entrez votre prenom" id="inpPrenom">
+          <br>
+          <input type='text' name='NumeroID' placeholder="Entrez votre NumeroID" id="inpNumeroEtudiant">
+          <br>
+          <input type='password' name='MotDePasse ' placeholder="Entrez votre Mot de passe" id="inpmtp">
+          <br>
+          <input id="valider" type="submit" value="Valider" />
+          <br>
+          <a href="../html/InscriptionEng.html">
+            <img src="../img/uk.svg" class="uk" alt="Drapeau Anglais">
+          </a>
+          <p id="erreur"></p>
+        </form>
+        <!-- OMBRES -->
+        <div class=" carre ombre1"></div>
+        <div class=" carre ombre2"></div>
+        <div class=" carre ombre3"></div>
+      </div>
+    </div>
+    <footer>
+      <img src="../img/IUT.png" alt="LOGO IUT" class="iut">
+    </footer>
+    <script src="../js/Inscription.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/*************************************************/
+/*                    Corps du site              */
+/*************************************************/
+
+
+body {
+	background-color: #172026;
+}
+
+main {
+	color: #fff;
+}
+
+.titre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #5FCDD9;
+	border-radius: 10px;
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	margin-left: 10%;
+	font-family: 'Rancho';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 87px;
+	color: #ffffff;
+}
+
+.uk {
+	width: 40px;
+	height: 40px;
+
+}
+
+.fr {
+	width: 40px;
+	height: 30px;
+}
+
+section {
+	margin-left: 10%;
+	margin-bottom: 5%;
+}
+
+section ul {
+	list-style: none;
+	margin-left: 2%;
+}
+
+section a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.bloc {
+
+	align-items: center;
+	margin-top: 20px;
+}
+
+.soustitre {
+	text-align: center;
+	background-color: #5FCDD9;
+	color: #ffffff;
+	font-family: 'Rancho';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+	width: 250px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	color: #ffffff;
+
+}
+
+
+/*************************************************/
+/*                    Responsive                 */
+/*************************************************/
+
+
+@media screen and (max-width: 992px) {
+	.grandDiv {
+		width: 700px;
+	}
+}
+
+
+@media screen and (max-width: 765px) {
+
+
+	.titre {
+		font-size: 45px;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+
+
+	.titre {
+		font-size: 35px;
+	}
+}

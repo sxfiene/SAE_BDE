@@ -1,0 +1,321 @@
+
+
+/* Entete*/
+
+
+.entete{
+
+    position: absolute;
+    width: 1600px;
+    height: 111px;
+    left: 0px;
+    top: 0px;
+    background: #172026;
+}
+
+.loup{
+
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    left: 18px;
+    top: 2px;
+}
+
+#a{
+
+    color: white;
+}
+
+
+.cata{
+
+    position: absolute;
+    width: 88px;
+    height: 25px;
+    left: 250px;
+    top: 47px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.br{
+
+    position: absolute;
+    width: 444px;
+    height: 29px;
+    left: 376px;
+    top: 52px;
+    background: #212A31;
+}
+
+.bdr{
+
+    position: absolute;
+    width: 165px;
+    height: 25px;
+    left: 481px;
+    top: 54px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+
+
+.uk{
+    
+    position: absolute;
+    width: 46px;
+    height: 42px;
+    left: 1102px;
+    top: 46px;
+    border-radius: 288px;
+}
+
+
+.clientvert{
+
+    position: absolute;
+    width: 46px;
+    height: 42px;
+    left: 1282px;
+    top: 46px;
+    border-radius: 288px;
+
+}
+
+
+
+
+
+/* donnée de la page */
+
+
+.PH1{
+
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 620px;
+    top: 150px;
+    font-family: 'Rancho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 49px;
+    color:black;
+ }
+
+
+ .info{
+    
+    position: absolute;
+    width: 289px;
+    height: 225px;
+    left: 40px;
+    top: 350px;
+    background: #04BF9D;
+    border-radius: 30px;
+ }
+
+
+.infor{
+
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 30px;
+    top:110px;
+    font-family: 'Rancho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 55px;
+    color: #FFFFFF;
+ }
+
+ .user{
+    position: absolute;
+    width: 90px;
+    height: 75px;
+    left: 100px;
+    top: 50px;
+    
+    
+ }
+
+
+ 
+ .info2{
+    
+    position: absolute;
+    width: 289px;
+    height: 225px;
+    left: 590px;
+    top: 350px;
+    background: #04BF9D;
+    border-radius: 30px;
+ }
+
+
+.infor2{
+
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 50px;
+    top:110px;
+    font-family: 'Rancho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 55px;
+    color: #FFFFFF;
+ }
+
+
+
+ .base{
+
+    position: absolute;
+    width: 90px;
+    height: 75px;
+    left: 100px;
+    top: 50px;
+    
+
+ }
+
+
+
+
+
+
+
+ 
+ .info3{
+    
+    position: absolute;
+    width: 289px;
+    height: 225px;
+    left: 1140px;
+    top: 350px;
+    background: #04BF9D;
+    border-radius: 30px;
+ }
+
+
+.infor3{
+
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 50px;
+    top:110px;
+    font-family: 'Rancho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 55px;
+    color: #FFFFFF;
+ }
+
+
+
+ .cartef{
+
+    position: absolute;
+    width: 90px;
+    height: 75px;
+    left: 100px;
+    top: 50px;
+    
+
+ }
+
+
+
+/* class pour la page en anglais */
+
+
+.infor3Eng{
+    
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 70px;
+    top:110px;
+    font-family: 'Rancho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* FOOTER */
+
+.bas{
+
+    position: absolute;
+    width: 1600px;
+    height: 100px;
+    left: 0px;
+    top: 750px; 
+    background: #172026;
+ }
+ 
+ .bdef{
+ 
+    position: absolute;
+    width: 238px;
+    height: 50px;
+    left: 194px;
+    top: 15px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+ }
+ 
+ .copy{
+ 
+    position: absolute;
+    width: 341px;
+    height: 28px;
+    left: 516px;
+    top: 15px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+ }
+ 
+ 
+ 

@@ -1,0 +1,594 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*************************************************/
+/*                    HEADER                     */
+/*************************************************/
+.main-head {
+	background: #172026;
+	max-height: 15vh;
+	display: flex;
+	align-items: center;
+	padding: 4rem;
+
+}
+
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+
+#logo {
+	display: flex;
+	justify-content: flex-start;
+	width: 100px;
+	height: 100px;
+}
+
+.cata {
+	margin-left: 90px;
+	color: #ffffff;
+	font-size: 21px;
+	text-decoration: none;
+
+
+}
+
+
+nav li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+.menuderoulant {
+	width: 150px;
+	list-style-type: none;
+	display: none;
+	position: absolute;
+	background-color: gray;
+	margin-left: -50px;
+	text-align: center;
+	font-family: "Rancho";
+	font-size: 25px;
+
+}
+
+
+button {
+	border-style: none;
+	background-color: #172026;
+
+}
+
+
+.menuderoulant li a {
+	border: 1px solid #000;
+	display: block;
+
+}
+
+
+.fr {
+
+	width: 45px;
+	height: 30px;
+	margin-right: 60px;
+	margin-top: 12px;
+}
+
+.uk {
+	width: 50px;
+	height: 50px;
+	margin-right: 60px;
+
+}
+
+.clientvert {
+	width: 50px;
+
+}
+
+
+.cata:hover {
+	text-decoration: underline;
+}
+
+
+.uk:hover,
+.fr:hover,
+.clientvert:hover {
+	transform: scale(1.08);
+}
+
+
+.menubouton:hover {
+
+	cursor: pointer;
+}
+
+
+.menuderoulant a:hover {
+	background-color: #04BFAD;
+}
+
+
+/*************************************************/
+/*                    Corps du site              */
+/*************************************************/
+
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+section h1 {
+	text-align: center;
+	font-family: 'Rancho';
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 87px;
+	color: #212A31;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+
+.grandDiv {
+	display: flex;
+	flex-direction: column;
+
+	margin-bottom: 10%;
+	background: #172026;
+	width: 1200px;
+	height: 500px;
+	border-radius: 35px;
+	box-shadow: 44px 4px 60px 8px rgba(0, 0, 0, .2);
+}
+
+
+h2 {
+	color: #ffffff;
+	font-family: 'Rancho';
+	margin-left: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 45px;
+
+}
+
+
+.bloc {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: #ffffff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 3.5ch;
+
+}
+
+
+.bloc2 {
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #ffffff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 3.5ch;
+}
+
+
+.bloc3 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #ffffff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 3.5ch;
+}
+
+
+.grandDiv img {
+	margin-left: 15px;
+	margin-right: 45px;
+	width: 50px;
+	height: 50px;
+}
+
+
+/*************************************************/
+/*                    FOOTER                     */
+/*************************************************/
+footer {
+
+	width: 100%;
+	background: #172026;
+
+}
+
+
+.footer-contenu {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 20px;
+	padding: 30px 25px;
+	color: #ffffff;
+
+}
+
+
+.footer-contacte h3,
+.footer-reseau h3,
+.footer-document h3 {
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+
+.liste-contacte,
+.liste-reseau,
+.liste-document {
+	list-style-type: none;
+
+}
+
+.footer-document li a {
+
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.liste-contacte li {
+	padding: 3px 0;
+}
+
+
+.liste-reseau {
+
+	display: flex;
+	justify-content: space-evenly;
+
+
+}
+
+
+.liste-document li {
+	padding: 3px 0;
+
+}
+
+
+.insta {
+
+	width: 45px;
+	height: 45px;
+}
+
+
+.tiktok {
+
+	width: 50px;
+	height: 50px;
+	margin-top: -3px;
+}
+
+
+.copyright {
+	font-size: 15px;
+	display: flex;
+	color: #ffffff;
+	padding: 1px;
+	margin-left: 65px;
+
+}
+
+.ah {
+
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+
+.footer-document li :hover {
+	text-decoration: underline;
+}
+
+.footer-reseau li img:hover {
+	transform: scale(1.25);
+
+}
+
+
+/*************************************************/
+/*                    Responsive                 */
+/*************************************************/
+
+@media screen and (max-width: 1200px) {
+
+
+	.footer-contenu {
+		width: 900px;
+	}
+
+	.grandDiv {
+		width: 900px;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+
+
+	.footer-contenu {
+		width: 650px;
+	}
+
+	.grandDiv {
+		width: 700px;
+	}
+
+}
+
+
+@media screen and (max-width: 765px) {
+
+	.menuderoulant {
+		width: 100px;
+		font-size: 15px;
+		margin-left: -30px;
+
+	}
+
+
+	.uk {
+		width: 40px;
+		height: 40px;
+		margin-top: 10px;
+
+
+	}
+
+	.cata {
+		margin-left: 25px;
+	}
+
+
+	section h1 {
+		font-size: 50px;
+	}
+
+
+	.grandDiv {
+		width: 400px;
+	}
+
+
+	footer-contenu {
+		width: 700px;
+	}
+
+	.liste-contacte li,
+	.liste-reseau li {
+		list-style-type: none;
+		font-size: 12px;
+
+	}
+
+	.liste-document li a {
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+		font-size: 12px;
+
+	}
+
+	.insta {
+
+		width: 30px;
+		height: 30px;
+	}
+
+
+	.tiktok {
+
+		width: 35px;
+		height: 35px;
+		margin-top: -3px;
+	}
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+	.grandDiv h2 {
+		font-size: 25px;
+	}
+
+	section h1 {
+		font-size: 40px;
+	}
+
+
+	.grandDiv {
+		width: 300px;
+	}
+
+	.bloc,
+	.bloc2,
+	.bloc3 {
+		font-size: 18px;
+	}
+
+
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		width: 100%;
+		margin: 80px;
+	}
+
+
+	.fr {
+
+		width: 30px;
+		height: 20px;
+		margin-right: 25px;
+		margin-bottom: 5px;
+	}
+
+
+	.uk {
+
+		width: 30px;
+		height: 30px;
+		margin-right: 30px;
+
+
+	}
+
+	.clientvert {
+		width: 40px;
+	}
+
+	#logo {
+
+		margin-left: -60px;
+		width: 90px;
+		height: 90px;
+	}
+
+
+	.menuderoulant {
+		width: 90px;
+		font-size: 15px;
+
+	}
+
+	.cata {
+		margin-left: 15px;
+		font-size: 17px;
+
+	}
+
+
+	.footer-contenu {
+		width: 390px;
+		justify-content: space-between;
+
+
+	}
+
+	.footer-contacte h3,
+	.footer-reseau h3,
+	.footer-document h3 {
+		font-size: 10px;
+		padding-bottom: 20px;
+	}
+
+
+	.liste-contacte li {
+		padding: 1px 0;
+	}
+
+	.insta {
+
+		width: 20px;
+		height: 20px;
+	}
+
+
+	.tiktok {
+
+		width: 25px;
+		height: 25px;
+		margin-top: -3px;
+	}
+
+	.liste-contacte li,
+	.liste-reseau li {
+		list-style-type: none;
+		font-size: 8px;
+
+	}
+
+	.liste-document li a {
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+		font-size: 8px;
+
+	}
+
+	.copyright {
+		font-size: 10px;
+
+	}
+
+
+}
+
+
+@media screen and (max-width:400px) {
+
+
+	#loup {
+		width: 70px;
+		height: 70px;
+	}
+
+	.menuderoulant {
+		width: 90px;
+		font-size: 15px;
+
+	}
+
+
+	.uk {
+		margin-right: 10px;
+		width: 25px;
+		height: 25px;
+
+	}
+
+	.footer-contenu {
+		width: 340px;
+		justify-content: space-between;
+
+
+	}
+
+	.fr {
+		margin-right: 20px;
+
+	}
+
+
+}

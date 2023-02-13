@@ -1,0 +1,29 @@
+.P404 {
+
+
+        /* emplacement de la phrase */
+       position: absolute;
+        width: 1090px;
+        height: 170px;
+        left: 325px;
+        top: 500px;
+   
+       /* police */
+       font-family: 'Rancho', sans-serif;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 80px;
+       line-height: 100px;
+   }
+   
+   
+   /* Emplacement de l'image du robot */
+   
+   .img {
+       position: absolute;
+       width: 652px;
+       height: 643px;
+       left: 350px;
+       top: 56px;
+   
+   }

@@ -1,0 +1,412 @@
+* {
+	margin: 0;
+	padding: 0;
+
+
+}
+
+
+/*************************************************/
+/*                    HEADER                     */
+/*************************************************/
+
+.loupBde {
+	height: 250px;
+}
+
+
+/*************************************************/
+/*                    Corps du site              */
+/*************************************************/
+
+
+body {
+	background: linear-gradient(90deg, #5FCDD9, #04BF9D);
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+header {
+	position: absolute;
+}
+
+
+.formulaire {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.container {
+
+	position: relative;
+}
+
+form {
+
+	background: rgba(255, 255, 255, .3);
+	padding: 3rem;
+	height: 475px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	box-shadow: 20px 20px 40px -6px rgb(0, 0, 0, .2);
+	text-align: center;
+}
+
+
+p {
+	color: black;
+	font-weight: 500;
+	opacity: .7;
+	font-size: 2.5rem;
+	margin-bottom: 60px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+	font-family: "Rancho";
+
+
+}
+
+
+.valider:hover {
+	box-shadow: 20px 20px 40px -6px rgb(0, 0, 0, .8);
+}
+
+input {
+	background: transparent;
+	border: none;
+	border-left: 1px solid rgba(255, 255, 255, .3);
+	border-top: 1px solid rgba(255, 255, 255, .3);
+	padding: 1rem;
+	width: 200px;
+	border-radius: 50px;
+	backdrop-filter: blur(5px);
+	box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+	color: black;
+	font-weight: 500;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+	transition: all .3s;
+	margin-bottom: 2em;
+
+
+}
+
+
+::placeholder {
+	color: black;
+
+}
+
+
+input:hover,
+input[type="text"]:focus,
+input[type="submit"]:focus {
+	background: rgba(255, 255, 255, .1);
+	box-shadow: 44px 4px 60px 8px rgba(0, 0, 0, .2);
+}
+
+
+input[type="submit"] {
+	cursor: pointer;
+	margin-top: 15px;
+	font-size: 1rem;
+	width: 150px;
+}
+
+
+.carre {
+	background: rgba(255, 255, 255, .3);
+	backdrop-filter: blur(10px);
+	position: absolute;
+	border-radius: 10px;
+	box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, .2);
+
+}
+
+
+.ombre1 {
+	height: 80px;
+	width: 80px;
+	top: -20px;
+	left: -40px;
+	z-index: -1;
+
+}
+
+.ombre2 {
+	height: 80px;
+	width: 80px;
+	bottom: -30px;
+	right: -5px;
+	z-index: -1;
+}
+
+.ombre3 {
+
+	height: 120px;
+	width: 120px;
+	bottom: -65px;
+	left: -50px;
+}
+
+
+.ombre1,
+.ombre2,
+.ombre3 {
+	animation: animate 10s linear infinite;
+}
+
+
+@keyframes animate {
+
+	0%,
+	100% {
+		transform: translateY(-40px);
+	}
+
+	50% {
+		transform: translateY(40px);
+
+	}
+
+}
+
+
+.uk {
+	height: 10px;
+	margin-bottom: 10px;
+
+}
+
+
+.fr {
+
+	height: 10px;
+	margin-bottom: 10px;
+
+
+}
+
+
+#erreur {
+	color: red;
+	font-size: 20px;
+	width: 200px;
+	margin-left: 10px;
+}
+
+
+/*************************************************/
+/*                    FOOTER                     */
+/*************************************************/
+
+
+footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: -125px;
+
+
+}
+
+
+.iut {
+	height: 100px;
+	display: flex;
+	align-items: flex-end;
+}
+
+
+/*************************************************/
+/*                Responsive                     */
+/*************************************************/
+
+
+@media screen and (max-width: 992px) {
+
+
+	.loupBde {
+		height: 200px;
+	}
+
+
+	form {
+		padding: 3rem;
+		height: 100%;
+	}
+
+
+	.iut {
+		height: 80px;
+	}
+
+
+}
+
+
+@media screen and (max-width:840px) {
+
+
+	.loupBde {
+		height: 275px;
+	}
+
+
+	form {
+		padding: 3rem;
+		height: 100%;
+	}
+
+
+	.iut {
+		height: 55px;
+	}
+
+}
+
+
+@media screen and (max-width:440px) {
+
+
+	.loupBde {
+		height: 100px;
+	}
+
+
+	form {
+		padding: 1rem;
+		height: auto;
+	}
+
+	.ombre1 {
+		height: 60px;
+		width: 60px;
+
+	}
+
+	.ombre2 {
+		height: 60px;
+		width: 60px;
+
+	}
+
+
+	.ombre3 {
+		height: 60px;
+		width: 60px;
+		right: -25px;
+
+	}
+
+
+	.iut {
+		height: 50px;
+		margin-bottom: -120px;
+	}
+
+
+}
+
+
+@media screen and (max-width:400px) {
+
+
+	.loupBde {
+		height: 95px;
+		margin-bottom: 25px;
+		margin-left: -20px;
+
+	}
+
+
+	form {
+		padding: 1rem;
+		height: auto;
+	}
+
+
+	.ombre1 {
+		height: 60px;
+		width: 60px;
+
+	}
+
+	.ombre2 {
+		height: 60px;
+		width: 60px;
+
+	}
+
+
+	.ombre3 {
+		height: 60px;
+		width: 60px;
+		right: -25px;
+
+	}
+
+
+	.iut {
+		height: 50px;
+		margin-bottom: -120px;
+	}
+
+	.ombre1,
+	.ombre2,
+	.ombre3 {
+		animation: animate 10s linear infinite;
+	}
+
+
+	@keyframes animate {
+
+		0%,
+		100% {
+			transform: translateY(0px);
+		}
+
+		50% {
+			transform: translateY(40px);
+		}
+
+	}
+
+}
+
+
+@media screen and (max-width:361px) {
+
+
+	.loupBde {
+		height: 87px;
+		margin-bottom: 25px;
+		margin-left: -20px;
+
+	}
+
+
+	form {
+		padding: 1rem;
+		height: auto;
+	}
+
+
+	@keyframes animate {
+
+		0%,
+		100% {
+			transform: translateY(0px);
+		}
+
+		50% {
+			transform: translateY(40px);
+		}
+
+	}
+}

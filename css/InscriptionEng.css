@@ -1,0 +1,283 @@
+/* background forêt */
+
+body{
+
+    background-image: url(../img/Forêt.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    Width:90%;
+    Height:90%;
+    left: 0px;
+    top: 0px;
+    background-size: 1519px 900px;
+ 
+}
+
+/* logo BDE */
+
+.loup{
+
+    position: absolute;
+    width: 174px;
+    height: 169px;
+    left: 15px;
+    top: 9px;
+}
+
+/* Le bloc d'inscription */
+
+.bloc{
+
+    position: absolute;
+    width: 954px;
+    height: 774px;
+    left: 330px;
+    top: 90px;
+    background: #027373;
+    border-radius: 100px;
+}
+
+
+
+/*****************************************************************************************************************************/
+
+/*  Create an account */
+
+.cc{
+
+    position: absolute;
+    width: 344px;
+    height: 56px;
+    left: 325px;
+    top: -20px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+
+
+
+/* Last Name */
+
+.name {
+    
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 45px;
+    top: 105px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+
+
+.inpName{
+
+    position: absolute;
+    width: 223px;
+    height: 49px;
+    left: 281px;
+    top: -5px;
+    background: #5FCDD9;
+    border-radius: 15px;
+}
+
+
+
+.Fname{
+
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 45px;
+    top: 200px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.inpFname{
+    
+    position: absolute;
+    width: 223px;
+    height: 49px;
+    left: 281px;
+    top: -1px;
+    background: #5FCDD9;
+    border-radius: 15px;
+}
+
+
+
+.StudentID{
+
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    left: 45px;
+    top: 300px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+
+
+.inpStudentID{
+    
+    position: absolute;
+    width: 223px;
+    height: 49px;
+    left: 281px;
+    top: 01px;
+    background: #5FCDD9;
+    border-radius: 15px;
+}
+
+
+.psw{
+
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    left: 45px;
+    top: 405px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    
+}
+
+
+
+.inppsw{
+    
+    position: absolute;
+    width: 223px;
+    height: 49px;
+    left: 281px;
+    top: -5px;
+    background: #5FCDD9;
+    border-radius: 15px;
+}
+
+
+
+
+.formation{
+
+    
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    left: 45px;
+    top: 505px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+
+.inpformation{
+
+    position: absolute;
+    width: 223px;
+    height: 49px;
+    left: 281px;
+    top: -5px;
+    background: #5FCDD9;
+    border-radius: 15px;
+}
+
+.submit{
+    
+    position: absolute;
+    width: 223px;
+    height: 49px;
+    left: 600px;
+    top: 675px;
+    background: #5FCDD9;
+    border-radius: 15px;
+    font-size: 22px;
+    border-color: #027373;
+}
+
+/*****************************************************************************************************************************/
+
+
+/* FOOTER */
+
+
+
+
+.bas{
+
+    position: absolute;
+    width: 1519px;
+    height: 100px;
+    left: 0px;
+    top: 900px;
+    background: #172026;
+
+}
+    
+.bdef{
+
+    position: absolute;
+    width: 238px;
+    height: 50px;
+    left: 194px;
+    top: 15px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.copy {
+
+    position: absolute;
+    width: 341px;
+    height: 28px;
+    left: 650px;
+    top: 45px;
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px; 
+    color: white;
+}
+
+.fr{
+
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 1080px;
+    top: 45px;
+
+}
