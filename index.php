@@ -34,3 +34,4 @@ if (is_readable($nom_fichier)) {
     'erreur 404';
 }
 
+?>
