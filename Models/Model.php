@@ -17,7 +17,7 @@ class Model
      */
     private function __construct()
     {
-        $this->bd = new PDO('mysql:host=localhost;dbname=bde','root');
+        $this->bd = new PDO('psql:host=localhost;dbname=sae_rework','Khaliss12'); //A CHANGE AVANT CHAQUE ITTERATION
         $this->bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->bd->query("SET nameS 'utf8'");
     }
