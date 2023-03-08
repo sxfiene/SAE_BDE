@@ -17,7 +17,7 @@ class Model
      */
     private function __construct()
     {
-        $this->bd = new PDO('psql:host=localhost;dbname=sae_rework','Khaliss12'); //A CHANGE AVANT CHAQUE ITTERATION
+        $this->bd = new PDO('psql:host=localhost;dbname=sae_rework','postgres'); //A CHANGE AVANT CHAQUE ITTERATION
         $this->bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->bd->query("SET nameS 'utf8'");
     }
@@ -37,7 +37,7 @@ class Model
     {
         //Préparation de la requête
         //$requete = $this->bd->prepare('INSERT INTO nobels (year, category, name, birthdate, birthplace, county, motivation) VALUES (:year, :category, :name, :birthdate, :birthplace, :county, :motivation)');
-        $requete = $this->bd->prepare('INSERT INTO Clients(idEtudiant, nom, prenom, password) VALUES (:idEtudiant, :nom, :prenom, :password)');
+        $requete = $this->bd->prepare('INSERT INTO Utilisateur(id_etudiant, nom, prenom, password, is_admin, email, created_at, fidelite) VALUES (:idEtudiant, :nom, :prenom, :password, :is_admin, :email, :created_at, :fidelite)');
         //Remplacement des marqueurs de place par les valeurs
         //$marqueurs = ['year', 'category', 'name', 'birthdate', 'birthplace', 'county', 'motivation'];
         $marqueurs = ['idEtudiant', 'nom', 'prenom', 'password'];
@@ -54,14 +54,14 @@ class Model
 
     public function getClient()
     {
-        $req = $this->bd->prepare('SELECT COUNT(*) FROM Clients');
+        $req = $this->bd->prepare('SELECT COUNT(*) FROM Utilisateur');
         $req->execute();
         $tab = $req->fetch(PDO::FETCH_NUM);
         return $tab[0];
     }
 
     public function login($login,$mdp) {
-        $req = $this->bd->prepare('SELECT password, admin, tiktak from clients where idEtudiant = :id');
+        $req = $this->bd->prepare('SELECT password, is_admin from utilisateur where id_etudiant = :id');
         $req->bindValue(":id", $login);
         $req->execute();
         $tab = $req->fetch(PDO::FETCH_NUM);
@@ -70,17 +70,21 @@ class Model
     }
 
     public function getProducts() {
-        $req = $this->bd->prepare('SELECT * from products');
+        $req = $this->bd->prepare('SELECT * from inventaire');
         $req->execute();
         return $req->fetchall();
     }
 
-    public function getHistorique($login) {
-        $req = $this->bd->prepare('SELECT * from historique where idEtudiant =:id');
-        $req->bindValue(":id", $login);
-        $req->execute();
-        return $req->fetchall();
-    }
+    /**
+     * Méthode permettant de récupérer un l'historique d'un utilisateur. A FAIRE AVEC LA BDD QUAND ON AURA LE TEMPS
+     */
+
+    //public function getHistorique($login) {
+      //  $req = $this->bd->prepare('SELECT * from historique where idEtudiant =:id');
+        //$req->bindValue(":id", $login);
+        //$req->execute();
+        //return $req->fetchall();
+    //}
 
     public function addProduitHistorique($infos)
     {
@@ -115,7 +119,7 @@ class Model
     }  
 
     public function quantite($id, $quantite) {
-        $req = $this->bd->prepare('update products set quantite = :quantite where id =:id');
+        $req = $this->bd->prepare('update inventaire set stock = :quantite where id_produit =:id');
         $req->bindValue(":id", $id);
         $req->bindValue(":quantite", $quantite);
         $req->execute();
@@ -124,13 +128,13 @@ class Model
 
     public function getInventaire()
     {
-        $req = $this->bd->prepare('SELECT * FROM products');
+        $req = $this->bd->prepare('SELECT * FROM inventaire');
         $req->execute();
         return $req->fetchall();
     }  
 
     public function ajouterProduit($infos) {
-        $requete = $this->bd->prepare('INSERT INTO products(img, price, name, quantite) VALUES (:img, :price, :name, :quantite)');
+        $requete = $this->bd->prepare('INSERT INTO inventaire(id_produit, nom_produit, desc_produit, stock, prix_produit, "pourcentage_fidÃ©lite") VALUES (:id, :nom, :desc, :stock, :prix, :pourcentage)');
         //Remplacement des marqueurs de place par les valeurs
         //$marqueurs = ['year', 'category', 'name', 'birthdate', 'birthplace', 'county', 'motivation'];
         $marqueurs = ["img", "price", "name", "quantite"];
@@ -146,7 +150,7 @@ class Model
     }
 
     public function getInfo($id) {
-        $req = $this->bd->prepare('SELECT * FROM clients where idEtudiant = :id');
+        $req = $this->bd->prepare('SELECT * FROM utilisateur where id_etudiant = :id');
         $req->bindValue(':id', $id);
         $req->execute();
         return $req->fetchall();
