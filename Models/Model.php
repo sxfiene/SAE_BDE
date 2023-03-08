@@ -134,7 +134,7 @@ class Model
     }  
 
     public function ajouterProduit($infos) {
-        $requete = $this->bd->prepare('INSERT INTO inventaire(id_produit, nom_produit, desc_produit, stock, prix_produit, "pourcentage_fidÃ©lite") VALUES (:id, :nom, :desc, :stock, :prix, :pourcentage)');
+        $requete = $this->bd->prepare('INSERT INTO inventaire(id_produit, nom_produit, desc_produit, stock, prix_produit, "pourcentage_fidelite") VALUES (:id, :nom, :desc, :stock, :prix, :pourcentage)');
         //Remplacement des marqueurs de place par les valeurs
         //$marqueurs = ['year', 'category', 'name', 'birthdate', 'birthplace', 'county', 'motivation'];
         $marqueurs = ["img", "price", "name", "quantite"];

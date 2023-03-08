@@ -5,7 +5,7 @@ CREATE TABLE Inventaire(
     desc_produit VARCHAR NOT NULL,
     stock INTEGER NOT NULL,
     prix_produit DOUBLE PRECISION NOT NULL,
-    pourcentage_fidélite DOUBLE PRECISION NOT NULL
+    pourcentage_fidelite DOUBLE PRECISION NOT NULL
 );
 
 CREATE TABLE Utilisateur(
@@ -46,3 +46,7 @@ ALTER TABLE
     Achat ADD CONSTRAINT achat_id_etudiant_foreign FOREIGN KEY(id_etudiant) REFERENCES Utilisateur(id_etudiant);
 ALTER TABLE
     Achat ADD CONSTRAINT achat_id_etudiant_foreign FOREIGN KEY(id_etudiant) REFERENCES Panier(id_panier);
+
+ALTER TABLE Inventaire
+    RENAME COLUMN "pourcentage_fidÃ©lite" TO pourcentage_fidelite;
+
