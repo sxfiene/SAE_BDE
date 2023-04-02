@@ -36,7 +36,7 @@ class Controller_inscription extends Controller {
         $ajout = $m->addClient($infos);
         //Préparation de $data pour l'affichage de la vue message
         $data = [
-            "title" => "Inscription ?",
+            "title" => "WORKING ?",
         ];
         if ($ajout) {
             $data["message"] = "Le client a été ajouté à la base de donnée.";
