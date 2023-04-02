@@ -1,3 +1,7 @@
+DROP TABLE Inventaire CASCADE;
+DROP TABLE Utilisateur CASCADE;
+DROP TABLE Panier CASCADE;
+DROP TABLE Achat CASCADE;
 
 CREATE TABLE Inventaire(
     id_produit INTEGER NOT NULL,
@@ -9,14 +13,14 @@ CREATE TABLE Inventaire(
 );
 
 CREATE TABLE Utilisateur(
-    id_etudiant INTEGER NOT NULL,
+    id_etudiant VARCHAR NOT NULL,
     nom VARCHAR NULL,
     prenom VARCHAR NULL,
     password VARCHAR NOT NULL,
     is_admin BOOLEAN NOT NULL,
     email VARCHAR NULL,
     created_at DATE NOT NULL,
-    fidelite INTEGER NOT NULL
+    fidelite INTEGER  NULL
 );
 
 CREATE TABLE Panier(

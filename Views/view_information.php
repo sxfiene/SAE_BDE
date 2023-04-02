@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>MonCompte</title>
-  <link rel="stylesheet" href="../MVC/Content/css/MonCompte.css">
+  <link rel="stylesheet" href="./css/MonCompte.css">
   <link href="https://fonts.cdnfonts.com/css/rancho" rel="stylesheet">
                 
  
@@ -12,17 +12,17 @@
 
   <header>
   <div class="entete">
-    <p > <a href="?controller=accueil&action=home"><img src="../MVC/Content/img/loup.png" class="loup"> </a> </p>
-    <p class="cata"><a href="../MVC/Content/html/catalogue.html" style="color:#FFFFFF" >Catalogue</a></p>
+    <p > <a href="?controller=accueil&action=home"><img src="./img/loup.png" class="loup"> </a> </p>
+    <p class="cata"><a href="./html/catalogue.html" style="color:#FFFFFF" >Catalogue</a></p>
     <div class="br">
   <ul class="menuderoulant"> 
     <li><a href="?controller=accueil&action=info">Mon profil</a></li>
     <li><a href="?controller=connexion&action=seconnecter">Se déconnecter</a></li>
   </ul>
     </div>
-    <p > <a href="?controller=accueil&action=homeEng"><img src="../MVC/Content/img/uk.svg" class="uk"> </a> </p> 
+    <p > <a href="?controller=accueil&action=homeEng"><img src="./img/uk.svg" class="uk"> </a> </p>
 <ul>   
-    <li><button id="menu-button"><img src="../MVC/Content/img/clientvert.jpg" class="clientvert"></button></li>
+    <li><button id="menu-button"><img src="./img/clientvert.jpg" class="clientvert"></button></li>
 </ul>
  <script>
 $(document).ready(function() {
@@ -46,21 +46,21 @@ $(document).ready(function() {
     <section>
       <div class="info">
         <p class="infor">Mes informations personnel</p>
-        <p > <img src="../MVC/Content/img/user.png" class="user"></p>
+        <p > <img src="./img/user.png" class="user"></p>
       </div>
       </section>
 
       <section>
         <div class="info2">
           <p class="infor2">Mon historique d'achat</p>
-           <p > <img src="../MVC/Content/img/base.png" class="base"></p>
+           <p > <img src="./img/base.png" class="base"></p>
         </div>
         </section>
 
         <section>
           <div class="info3">
             <p class="infor3">Mes points de fidélités</p>
-            <p > <img src="../MVC/Content/img/cartefidelite.png" class="cartef"></p>
+            <p > <img src="./img/cartefidelite.png" class="cartef"></p>
           </div>
           </section>
 

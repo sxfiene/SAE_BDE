@@ -9,7 +9,7 @@
   </div>
     <div class="bg">
       
-      <img src="../MVC/Content/img/bde.jpg" class="bde" alt="Photo intérieur Université">
+      <img src="./img/bde.jpg" class="bde" alt="Photo intérieur Université">
     <ul>
         
         <li>Lundi : 11h - 19h30     &check;</li>
@@ -29,17 +29,17 @@
     </div>
     <p class="euro"> Les paiements autorisés à plus de  1&euro; :</p>
     <div class="div3">
-        <img src="../MVC/Content/img/bank.png" alt="Carte Bancaire" > 
+        <img src="./img/bank.png" alt="Carte Bancaire" >
         <p>&check;</p>
         
-        <img src="../MVC/Content/img/applepay.png" alt="Apple Pay">
+        <img src="./img/applepay.png" alt="Apple Pay">
         <p>&check;</p>
     </div>
     <p class="euro">D'autre moyens de paiement disponible : </p>
     <div class="div3">
-      <img src="../MVC/Content/img/icons8-pièces-de-monnaie-96.png" alt="Pièce de Monnaie" > 
+      <img src="./img/icons8-pièces-de-monnaie-96.png" alt="Pièce de Monnaie" >
       <p>&check;</p>
-      <img src="../MVC/Content/img/billet.png"  alt ="Billet">
+      <img src="./img/billet.png"  alt ="Billet">
       <p>&check;</p>
   </div>
 
@@ -51,10 +51,10 @@
   <div class="cadre">
     <div id="caroussel">
       <div class="images">
-        <img src="../MVC/Content/img/kinder.jpg" alt="kinder-bueno">
-        <img src="../MVC/Content/img/cristaline.jfif" alt="cristaline">
-        <img src="../MVC/Content/img/kitkat.webp" alt="kitkat">
-        <img src="../MVC/Content/img/mars.jpg" alt="mars">
+        <img src="./img/kinder.jpg" alt="kinder-bueno">
+        <img src="./img/cristaline.jfif" alt="cristaline">
+        <img src="./img/kitkat.webp" alt="kitkat">
+        <img src="./img/mars.jpg" alt="mars">
       </div>
     </div>
   </div>
@@ -81,8 +81,8 @@
       <div class="footer-reseau">
         <h3> Réseaux sociaux </h3>
         <ul class="liste-reseau">
-          <li><a href="https://www.instagram.com/bdeup13/"><img src="../MVC/Content/img/instagram.svg" class="insta" alt="logo istagram"></a></li>
-          <li><a href="https://www.tiktok.com/@bdeup13?_t=8XeqIcUP8XF&_r=1&fbclid=PAAaZ_noPD2puYIRo487qGeJtzZwcnzErIxAWR9LAVAhEGcoxbvmwk3WS5_f0"><img src="../MVC/Content/img/tiktok.svg" class="tiktok" alt="logo tiktok"></a></li>
+          <li><a href="https://www.instagram.com/bdeup13/"><img src="./img/instagram.svg" class="insta" alt="logo istagram"></a></li>
+          <li><a href="https://www.tiktok.com/@bdeup13?_t=8XeqIcUP8XF&_r=1&fbclid=PAAaZ_noPD2puYIRo487qGeJtzZwcnzErIxAWR9LAVAhEGcoxbvmwk3WS5_f0"><img src="./img/tiktok.svg" class="tiktok" alt="logo tiktok"></a></li>
         </ul>
       </div>
 

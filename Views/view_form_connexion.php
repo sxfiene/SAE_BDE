@@ -1,15 +1,19 @@
+<?php
+if ( isset($message)) echo $message;
+
+?>
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <title>ConnexionFr</title>
-  <link rel="stylesheet" href="../MVC/Content/css/connexion.css">
+  <link rel="stylesheet" href="./css/connexion.css">
   <link href="https://fonts.cdnfonts.com/css/rancho" rel="stylesheet">
 </head>
 
 <body>
 
-<header> <div class="head"> <img src="../MVC/Content/img/LoupNoir.png" alt="Logo BDE" class="loupBde"></div> </header>
+<header> <div class="head"> <img src="./img/LoupNoir.png" alt="Logo BDE" class="loupBde"></div> </header>
 
    <!--FORMULAIRE-->
 
@@ -27,11 +31,10 @@
       <br><p> Vous avez oubliez votre Mot de Passe ?</p>
       <a href="#" class="mtpOublie"> Mot de passe oublié </a></br>
       <br><a href="#" class="seConnecter">Se connecter en tant qu'inviter</a></br>
-      <a href="?controller=connexion&action=seconnecterEng"><img src="../MVC/Content/img/uk.svg" class="fr" alt="Drapeau Anglais"></a> 
+      <a href="?controller=connexion&action=seconnecterEng"><img src="./img/uk.svg" class="fr" alt="Drapeau Anglais"></a> 
       <p id="erreur"></p>
 
     </form>
-    <?php if ($erreur) {echo "</br></br><div style=\"color:red; display: flex; justify-content: center;align-items: flex end;\"'>Identifiant et/ou mot de passe incorrect</div>";}?>
 
     <!-- OMBRES -->
 
@@ -42,8 +45,8 @@
 </div>
 </div>
 
-<footer><img src="../MVC/Content/img/IUT.png" alt="LOGO IUT" class="iut"></footer>
+<footer><img src="./img/IUT.png" alt="LOGO IUT" class="iut"></footer>
 
-<script src="../MVC/Content/js/connexion.js"> </script>
+<script src="./js/connexion.js"> </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../MVC/Content/css/Footer.css">
+<link rel="stylesheet" href="./css/Footer.css">
 <footer>
 
     <div class="footer-contenu">
@@ -16,16 +16,16 @@
       <div class="footer-reseau">
         <h3> Réseaux sociaux </h3>
         <ul class="liste-reseau">
-          <li><a href="https://www.instagram.com/bdeup13/%22%3E"> <img src="../MVC/Content/img/instagram.svg" class="insta" alt="logo istagram"></a></li>
-          <li><a href="https://www.tiktok.com/@bdeup13?_t=8XeqIcUP8XF&_r=1&fbclid=PAAaZ_noPD2puYIRo487qGeJtzZwcnzErIxAWR9LAVAhEGcoxbvmwk3WS5_f0%22%3E"><img src="../MVC/Content/img/tiktok.svg" class="tiktok" alt="logo tiktok"></a></li>
+          <li><a href="https://www.instagram.com/bdeup13/%22%3E"> <img src="./img/instagram.svg" class="insta" alt="logo istagram"></a></li>
+          <li><a href="https://www.tiktok.com/@bdeup13?_t=8XeqIcUP8XF&_r=1&fbclid=PAAaZ_noPD2puYIRo487qGeJtzZwcnzErIxAWR9LAVAhEGcoxbvmwk3WS5_f0%22%3E"><img src="./img/tiktok.svg" class="tiktok" alt="logo tiktok"></a></li>
         </ul>
       </div>
 
       <div class="footer-document">
         <h3> Documents offciels </h3>
         <ul class="liste-document">
-          <li><a href="../MVC/Content/html/MentionLegal.html"> Mention légales </a></li>
-          <li><a href="../MVC/Content/html/Charte.html"> Charte </a></li>
+          <li><a href="./html/MentionLegal.html"> Mention légales </a></li>
+          <li><a href="./html/Charte.html"> Charte </a></li>
         </ul>
       </div> 
 

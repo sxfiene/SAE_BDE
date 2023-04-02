@@ -17,7 +17,8 @@ class Model
      */
     private function __construct()
     {
-        $this->bd = new PDO('psql:host=localhost;dbname=sae_rework','postgres'); //A CHANGE AVANT CHAQUE ITTERATION
+        include "./Utils/credentials.php";
+        $this->bd = new PDO($dsn, $login, $mdp);
         $this->bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->bd->query("SET nameS 'utf8'");
     }
@@ -37,7 +38,7 @@ class Model
     {
         //Préparation de la requête
         //$requete = $this->bd->prepare('INSERT INTO nobels (year, category, name, birthdate, birthplace, county, motivation) VALUES (:year, :category, :name, :birthdate, :birthplace, :county, :motivation)');
-        $requete = $this->bd->prepare('INSERT INTO Utilisateur(id_etudiant, nom, prenom, password, is_admin, email, created_at, fidelite) VALUES (:idEtudiant, :nom, :prenom, :password, :is_admin, :email, :created_at, :fidelite)');
+        $requete = $this->bd->prepare("INSERT INTO utilisateur(id_etudiant, nom, prenom, password, is_admin, created_at) VALUES (:idEtudiant, :nom, :prenom, :password, false , current_date)");
         //Remplacement des marqueurs de place par les valeurs
         //$marqueurs = ['year', 'category', 'name', 'birthdate', 'birthplace', 'county', 'motivation'];
         $marqueurs = ['idEtudiant', 'nom', 'prenom', 'password'];
@@ -51,6 +52,13 @@ class Model
 
         return (bool) $requete->rowCount();
     }
+    public function Indatabase($id){
+        $req = $this->bd->prepare('SELECT * FROM Utilisateur WHERE id_etudiant = :idd');
+        $req->bindValue( 'idd', $id);
+        $req->execute();
+        return (bool) $req->rowCount();
+    }
+
 
     public function getClient()
     {

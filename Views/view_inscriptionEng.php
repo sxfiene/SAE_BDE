@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Register</title>
-  <link rel="stylesheet" href="../MVC/Content/css/InscriptionEng.css">
+  <link rel="stylesheet" href="./css/InscriptionEng.css">
   
 
 </head>
 <body>
-  <a href="?controller=accueil&action=homeEng"><img src="../MVC/Content/img/loup.png" class="loup"> </a> 
+  <a href="?controller=accueil&action=homeEng"><img src="./img/loup.png" class="loup"> </a> 
   <div class="bloc">
   <h1 class="cc"> Create an account </h1>
   <form method="post" action='?controller=inscription&action=sinscrire'>
@@ -33,6 +33,6 @@
       </p>
       <p class="copy">Copyright© Stark Industries</p>
       
-      <p > <a href="?controller=inscription&action=inscription"><img class="fr" src="../MVC/Content/img/FR.png"> </a> </p>
+      <p > <a href="?controller=inscription&action=inscription"><img class="fr" src="./img/FR.png"> </a> </p>
     </div>
   </footer>
