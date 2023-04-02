@@ -17,7 +17,10 @@ class Model
      */
     private function __construct()
     {
-        include "./Utils/credentials.php";
+        $dsn = 'pgsql:host=localhost;dbname=sae_rework';
+        $login = 'postgres';
+        $mdp = 'Wiggle13';
+
         $this->bd = new PDO($dsn, $login, $mdp);
         $this->bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->bd->query("SET nameS 'utf8'");
