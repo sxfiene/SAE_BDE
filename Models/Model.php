@@ -17,9 +17,9 @@ class Model
      */
     private function __construct()
     {
-        $dsn = 'pgsql:host=localhost;dbname=sae_rework';
-        $login = 'postgres';
-        $mdp = 'Wiggle13';
+        $dsn = 'pgsql:host=localhost;dbname=sae_rework'; // Doit etre implémentercomme cela niveau BDD
+        $login = 'postgres'; // placeholder
+        $mdp = 'postgres'; // placeholder
 
         $this->bd = new PDO($dsn, $login, $mdp);
         $this->bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
