@@ -19,7 +19,7 @@ class Model
     {
         $dsn = 'pgsql:host=localhost;dbname=sae_rework'; 
         $login = 'postgres'; 
-        $mdp = 'postgres';
+        $mdp = 'Derferferd12';
         $this->bd = new PDO($dsn, $login, $mdp);
         $this->bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->bd->query("SET nameS 'utf8'");
