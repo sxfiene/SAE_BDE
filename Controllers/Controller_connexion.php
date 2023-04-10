@@ -40,6 +40,14 @@ class Controller_connexion extends Controller
         $data = ["erreur" => false,];
         $this->render("form_connexionEng", $data);
     }
+    public function action_mdpoublié()
+    {   
+        $data = ["erreur" => false,];
+        $this->render("forgot", $data);
+    }
+    public function action_domdp(){
+        //Envoie d'un email via PHPMailer a implémenter prochainement
+    }
     public function action_seconnecterinvite(){
         $_SESSION['id_utilisateur'] = 'anonyme';
         $_SESSION['view'] = 'Accueil';
