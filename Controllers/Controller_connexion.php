@@ -40,7 +40,12 @@ class Controller_connexion extends Controller
         $data = ["erreur" => false,];
         $this->render("form_connexionEng", $data);
     }
-
+    public function action_seconnecterinvite(){
+        $_SESSION['id_utilisateur'] = 'anonyme';
+        $_SESSION['view'] = 'Accueil';
+        $data = ["erreur" => false,];
+        $this->render("home",$data);
+        }
     public function action_login() {
         $m = Model::getModel();
         $m = $m->login($_POST['idf'],$_POST['mdp']);

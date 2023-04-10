@@ -30,7 +30,7 @@ if ( isset($message)) echo $message;
       <a href="?controller=inscription&action=inscription" class="creeCompte">Crée un compte</a></br>
       <br><p> Vous avez oubliez votre Mot de Passe ?</p>
       <a href="#" class="mtpOublie"> Mot de passe oublié </a></br>
-      <br><a href="#" class="seConnecter">Se connecter en tant qu'inviter</a></br>
+      <br><a href="?controller=connexion&action=seconnecterinvite" class="seConnecter">Se connecter en tant qu'inviter</a></br>
       <a href="?controller=connexion&action=seconnecterEng"><img src="./img/uk.svg" class="fr" alt="Drapeau Anglais"></a> 
       <p id="erreur"></p>
 
