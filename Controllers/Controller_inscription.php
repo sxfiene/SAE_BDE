@@ -29,7 +29,7 @@ class Controller_inscription extends Controller {
             $infos['idEtudiant'] = $_POST['idEtudiant'] ;
             $infos['nom'] = $_POST['nom'] ;
             $infos['prenom'] = $_POST['prenom'] ;
-            if (trim($_POST['password']) <= 8 ){
+            if ($_POST['password'] >= 8 ){
                 $options = [
                     'cost' => 12,
                 ];
@@ -76,7 +76,7 @@ class Controller_inscription extends Controller {
             "title" => "Inscription ?",
         ];
         if ($ajout) {
-            $data["message"] = "Le client aété ajouté à la base de donnée. Connecté vous !!";
+            $data["message"] = "Le client a été ajouté à la base de donnée. Connecté vous !!";
             $this->render("form_connexion", $data);
         } else {
             $data["message"] = "Il y eu un probleme! Le client n'a pu être ajouter.";

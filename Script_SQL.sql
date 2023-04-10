@@ -44,13 +44,4 @@ ALTER TABLE
     Panier ADD PRIMARY KEY(id_panier);
 ALTER TABLE
     Achat ADD PRIMARY KEY(id_etudiant);
-ALTER TABLE
-    Panier ADD CONSTRAINT panier_id_panier_foreign FOREIGN KEY(id_panier) REFERENCES Inventaire(id_produit);
-ALTER TABLE
-    Achat ADD CONSTRAINT achat_id_etudiant_foreign FOREIGN KEY(id_etudiant) REFERENCES Utilisateur(id_etudiant);
-ALTER TABLE
-    Achat ADD CONSTRAINT achat_id_etudiant_foreign FOREIGN KEY(id_etudiant) REFERENCES Panier(id_panier);
-
-ALTER TABLE Inventaire
-    RENAME COLUMN "pourcentage_fidÃ©lite" TO pourcentage_fidelite;
 
