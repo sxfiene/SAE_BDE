@@ -29,7 +29,7 @@ class Controller_inscription extends Controller {
             $infos['idEtudiant'] = $_POST['idEtudiant'] ;
             $infos['nom'] = $_POST['nom'] ;
             $infos['prenom'] = $_POST['prenom'] ;
-            if ($_POST['password'] >= 8 ){
+            if ( strlen($_POST['password']) >= 8 ){
                 $options = [
                     'cost' => 12,
                 ];

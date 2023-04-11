@@ -19,7 +19,7 @@ class Model
     {
         $dsn = 'pgsql:host=localhost;dbname=sae_rework'; 
         $login = 'postgres'; 
-        $mdp = 'Derferferd12';
+        $mdp = 'Wiggle13';
         $this->bd = new PDO($dsn, $login, $mdp);
         $this->bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->bd->query("SET nameS 'utf8'");
@@ -69,7 +69,33 @@ class Model
         $tab = $req->fetch(PDO::FETCH_NUM);
         return $tab[0];
     }
+    public function AllClient(){
+        $req = $this->bd->prepare('SELECT * FROM Utilisateur');
+        $req->execute();
+        $tab = $req->fetchAll(PDO::FETCH_ASSOC);
+        return $tab;
+    }
+    public function Allproduit(){
+        $req = $this->bd->prepare('SELECT * FROM Inventaire');
+        $req->execute();
+        $tab = $req->fetchAll(PDO::FETCH_ASSOC);
+        return $tab;
+    }
+    public function GetProduit($id){
+        $req = $this->bd->prepare('SELECT * FROM Inventaire where id_produit=:id');
+        $req->bindValue( 'id', $id);
+        $req->execute();
+        $res = $req->fetch(PDO::FETCH_ASSOC);
+        return $res;
+    }
+    public function checkAdmin($id){
 
+        $req = $this->bd->prepare('SELECT is_admin FROM Utilisateur where id_etudiant=:id');
+        $req->bindValue( 'id', $id);
+        $req->execute();
+        $res = $req->fetch(PDO::FETCH_ASSOC);
+        return $res['is_admin'];
+    }
     public function login($login,$mdp) {
         $req = $this->bd->prepare('SELECT password, is_admin from utilisateur where id_etudiant = :id');
         $req->bindValue(":id", $login);

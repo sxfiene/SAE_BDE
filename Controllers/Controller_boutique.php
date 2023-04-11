@@ -67,7 +67,12 @@ class Controller_boutique extends Controller
         ];
         $this->render("historique", $data);
     }
+    public function action_modif() {
+        $data = [];
 
+
+        $this->render("produit", $data);
+    }
     public function action_achat() {
         $data = [];
         $m = Model::getModel();

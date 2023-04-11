@@ -38,7 +38,7 @@
       </nav>
         <?php } else {?>
         <a href="#"><img src="./img/uk.svg" class="uk" alt="drapeau royaume uni"></a>
-        <div><button class="menubouton"><img src="./img/clientvert.svg" class="clientvert" alt="Logo Profil"></button>
+        <div><button class="menubouton"> Menu</button>
         <ul class="menuderoulant">
           <li>  <a href="?controller=accueil&action=info"> Mon compte</a></li>
           <li> <a href="?controller=connexion&action=seconnecter"> Se déconnecter</a></li>

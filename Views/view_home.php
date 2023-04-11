@@ -1,5 +1,6 @@
 <?php
  require_once "view_header.php";
+echo $_SESSION['admin'];
 ?>
 
 <main>
