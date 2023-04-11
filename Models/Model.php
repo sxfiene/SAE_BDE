@@ -88,6 +88,17 @@ class Model
         $res = $req->fetch(PDO::FETCH_ASSOC);
         return $res;
     }
+    public function updateProduit($tab){
+        $req = $this->bd->prepare('UPDATE Inventaire SET nom_produit=:np , desc_produit=:dp , stock=:s , prix_produit=:pp , pourcentage_fidelite=:pf  WHERE id_produit=:ip');
+        $req->bindValue( 'np', $tab['nom']);
+        $req->bindValue( 'ip', $tab['idprod']);
+        $req->bindValue( 'dp', $tab['description']);
+        $req->bindValue( 's', $tab['quantite']);
+        $req->bindValue( 'pp', $tab['prix']);
+        $req->bindValue( 'pf', $tab['fidelite']);
+        $req->execute();
+        return (bool) $req->rowCount();
+    }
     public function checkAdmin($id){
 
         $req = $this->bd->prepare('SELECT is_admin FROM Utilisateur where id_etudiant=:id');

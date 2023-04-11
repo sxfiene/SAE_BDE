@@ -54,26 +54,26 @@ require_once "view_header.php";
 <body>
 <h1>Modification du produit</h1>
 
-<form action="" method="post">
+<?php echo "<form action='?controller=boutique&action=confirmodif&id_produit=" . $_GET['id_produit'] . "' method='POST'>";?>
     <?php
         $m = Model::getModel();
         $tab = $m->GetProduit($_GET['id_produit']);
     ?>
     <label for="nom">Nom du produit :</label>
-    <input type="text" id="nom" name="nom" value="<?php echo $tab['nom_produit']?>">
+    <input type="text" id="nom" name="nom" value="<?php echo $tab['nom_produit']?>" required>
 
     <label for="description">Description :</label>
-    <textarea id="description" name="description"><?php echo $tab['desc_produit']?></textarea>
+    <textarea id="description" name="description" required><?php echo $tab['desc_produit']?></textarea>
 
 
     <label for="quantite">Quantité en stock :</label>
-    <input type="number" id="quantite" name="quantite" value="<?php echo $tab['stock']?>">
+    <input type="number" id="quantite" name="quantite" value="<?php echo $tab['stock']?>" required>
 
-    <label for="prix">Prix unitaire :</label>
-    <input type="text" id="prix" name="prix" value="<?php echo $tab['prix_produit'] . '€'?>">
+    <label for="prix">Prix unitaire (en €):</label>
+    <input type="text" id="prix" name="prix" value="<?php echo $tab['prix_produit'];?>" required>
 
-    <label for="fidelite">Pourcentage de Fidélité :</label>
-    <input type="text" id="prix" name="fidelite" value="<?php echo round( $tab['pourcentage_fidelite'] * 100 ), '%'; ?>">
+    <label for="fidelite">Pourcentage de Fidélité (en %) :</label>
+    <input type="text" id="prix" name="fidelite" value="<?php echo round( $tab['pourcentage_fidelite'] * 100 ); ?>" required>
 
 
     <input type="submit" value="Enregistrer les modifications">

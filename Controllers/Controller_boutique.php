@@ -73,6 +73,24 @@ class Controller_boutique extends Controller
 
         $this->render("produit", $data);
     }
+    public function action_confirmodif() {
+        $data = [];
+        $m = Model::getModel();
+        $prix = explode(" ",$_POST['prix']);
+        echo "<script>
+        alert('Produit Mis à jour ! ');
+        </script>";
+        $tab =[
+            "idprod" => $_GET['id_produit'],
+            "nom" => $_POST['nom'],
+            "description" => $_POST['description'],
+            "quantite" => $_POST['quantite'],
+            "prix" => $_POST['prix'],
+            "fidelite" => $_POST['fidelite']/100
+        ];
+        $m->updateProduit($tab);
+        $this->render("produit", $data);
+    }
     public function action_achat() {
         $data = [];
         $m = Model::getModel();

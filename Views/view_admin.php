@@ -63,7 +63,7 @@ require_once "view_header.php";
         echo '<td>' . $value['desc_produit'] . '</td>';
         echo '<td>' . $value['stock'] . '</td>';
         echo '<td>' . $value['prix_produit'] . "€" . '</td>';
-        echo '<td>' . $value['pourcentage_fidelite'] . '</td>';
+        echo '<td>' .round( $value['pourcentage_fidelite'] * 100 ), '%'; '</td>';
         echo '<td>' . "<a href='?controller=boutique&action=modif&id_produit=" .$value['id_produit']. "'> X </a>";
         echo '</tr>';
     }
@@ -97,14 +97,15 @@ require_once "view_header.php";
                 }
                 else{
                     echo '<td>' . "Non" . '</td>';
+                    echo '<td>' . "<a href='?controller=accueil&action=usermodifadmin&id_etudiant=" .$value['id_etudiant']. "'> X </a>";
                 }
+
                 echo '</tr>';
                 }
 
     ?>
 </table>
 
-<button>Modifier les informations utilisateur</button>
 </body>
 </html>
 
