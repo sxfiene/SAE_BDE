@@ -84,3 +84,23 @@ Document Officiels : contient deux pages web, celui de la Mention légale qui co
 
 **Page Ajouter un produit:</br>**
 → La page est composée d’un formulaire que l’utilisateur doit remplir pour ajouter des produits dans l’inventaire, un champ de texte qui contient “le lien de l’image”, “son prix”, “son nom”, “sa quantité”.
+
+## Compétences Acquises
+
+La réalisation du projet "projetBDE" m'a permis de développer et de mettre en pratique un large éventail de compétences techniques et pratiques, tant du point de vue du développement web que de la gestion de projet :
+
+- **Développement Front-end et Back-end :** J'ai acquis de l'expérience dans le développement à la fois du front-end et du back-end, en utilisant des technologies telles que HTML, CSS, JavaScript, PHP et des frameworks comme Gradio pour créer des interfaces utilisateur conviviales et des fonctionnalités dynamiques.
+
+- **Gestion de base de données :** J'ai appris à concevoir et à manipuler des bases de données relationnelles, en utilisant des outils comme MySQL ou PostgreSQL pour stocker et gérer efficacement les données des utilisateurs, des produits et des transactions.
+
+- **Authentification et autorisation :** J'ai mis en place des systèmes d'authentification et d'autorisation sécurisés, permettant aux utilisateurs de se connecter, de créer des comptes et d'accéder à des fonctionnalités spécifiques en fonction de leurs rôles (client ou membre du BDE).
+
+- **Déploiement d'application web :** J'ai appris à déployer des applications web sur des serveurs en ligne, en utilisant des services d'hébergement comme Heroku ou AWS pour rendre l'application accessible au public de manière fiable et sécurisée.
+
+- **Travail en équipe :** Travailler avec une équipe de six personnes m'a permis de développer mes compétences en communication, en collaboration et en résolution de problèmes, en contribuant à tous les aspects du projet, de la conception à la mise en œuvre.
+
+- **Gestion de projet agile :** J'ai participé à la planification, à l'organisation et à l'exécution du projet selon une méthodologie agile, en utilisant des outils de suivi des tâches et de gestion de projet comme Trello ou Asana pour assurer un développement efficace et cohérent.
+
+- **Développement de fonctionnalités avancées :** J'ai implémenté des fonctionnalités avancées telles que la gestion des paniers d'achat, l'historique des transactions, le suivi des ventes mensuelles et annuelles, ainsi que la gestion de l'inventaire des produits.
+
+- **Sécurité et conformité :** J'ai pris en compte les aspects de sécurité et de conformité lors du développement de l'application, en mettant en œuvre des mesures pour protéger les données des utilisateurs et en respectant les réglementations en matière de protection des données.
